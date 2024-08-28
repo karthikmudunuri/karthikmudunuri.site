@@ -30,7 +30,7 @@
 
 # Portfolio 
 
-Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion
+✨ My portfolio built with Next.js, Tailwind, Typescript and Eldora UI.
 
 # Features
 
@@ -38,34 +38,38 @@ Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer moti
 - Responsive for different devices
 - Optimized for Next.js and Vercel
 
-# Getting Started Locally
+## Installation through CLI
 
-1. Clone this repository to your local machine:
+<Steps>
+  <Step>Clone this repository to your local machine:</Step>
 
-   ```bash
-   git clone https://github.com/karthikmudunuri/portfolio-template
-   ```
+```bash
+git clonehttps://github.com/karthikmudunuri/karthikmudunuri.site.git
+```
 
-2. Move to the cloned directory
+  <Step>Move to the cloned directory:</Step>
+ 
+ ```bash
+ cd karthikmudunuri.site
+ ```
 
-   ```bash
-   cd portfolio-template
-   ```
+  <Step>Install dependencies:</Step>
+  ```bash
+  npm install
+  ```
+  
+  
+  <Step>Start the local Server:</Step>
+  ```bash
+  npm run dev
+  ```
 
-3. Install dependencies:
+  <Step>Open the [data](https://github.com/karthikmudunuri/karthikmudunuri.site/blob/main/src/data/index.tsx) file and change the content thats it! its yours..</Step>
 
-   ```bash
-   npm install
-   ```
 
-4. Start the local Server:
 
-   ```bash
-   npm run dev
-   ```
-
-5. Open the [Sections](https://github.com/karthikmudunuri/portfolio-template/tree/main/app/sections) folder and make changes
+</Steps>
 
 # License
 
-Licensed under the [MIT license](https://github.com/karthikmudunuri/portfolio-template/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/karthikmudunuri/karthikmudunuri.site/blob/main/LICENSE.md).
