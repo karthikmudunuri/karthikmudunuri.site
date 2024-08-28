@@ -296,15 +296,31 @@ export const DATA = {
   contributions: [
     {
       link: "https://github.com/karthikmudunuri/eldoraui",
+      title: "eldora ui",
+      description : "Eldora UI is a collection of re-usable components that you can copy and paste into your web apps. It primarily features components, blocks, and templates.",
+      stars: "847",
+      forks:"29",
     },
     {
       link: "https://github.com/karthikmudunuri/saas-landing-page-template",
+      title: "saas-landing-page-template",
+      description : "Template for saas landing page with dark theme using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+      stars: "59",
+      forks:"13",
     },
     {
       link: "https://github.com/karthikmudunuri/portfolio-template",
+      title: "portfolio-template",
+      description : "Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion and Eldora UI.",
+      stars: "35",
+      forks:"18",
     },
     {
-      link: "https://github.com/karthikmudunuri/karthikmudunuri.site",
+      link: "https://github.com/shuding/nextra",
+      title: "nextra",
+      description : "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
+      stars: "11.2k",
+      forks:"1.2k",
     },
   ],
   hackathonsummary:"I like building things During my time in university, I attended [hackathons](/about). People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
