@@ -23,7 +23,8 @@
 
 <div align="center">
 
- <img width="1425" alt="Portfolio-template" src="https://github.com/user-attachments/assets/265fa13e-98ed-4c99-bd7f-ce7efe19627f">
+
+ <img width="1425" alt="Portfolio-template" src="https://github.com/user-attachments/assets/c15f51ac-9d8c-4643-be45-8911caa594dd">
 
  
 </div>
@@ -32,11 +33,30 @@
 
 ✨ My portfolio built with Next.js, Tailwind, Typescript and Eldora UI.
 
-# Features
+## What is this?
 
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Eldora UI
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+A complete template to market yourself and your portfolio to the world as a developer.
+
+## Why should I use this?
+
+✅ Save 100+ hours of work  
+✅ No need to learn advanced animations  
+✅ Easy to configure and change  
+✅ 1-click download and setup  
+✅ 5 minutes to update the text and images  
+✅ Deploy live to Vercel
+
+## Features
+
+- Hero Section  
+- About Section  
+- Work Section  
+- Education Section  
+- Projects Section  
+- Hackathon Section  
+- Contact Section  
+- Blog
+
 
 ## Installation through CLI
 
