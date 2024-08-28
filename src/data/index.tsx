@@ -304,7 +304,7 @@ export const DATA = {
       link: "https://github.com/karthikmudunuri/portfolio-template",
     },
     {
-      link: "https://github.com/shuding/nextra",
+      link: "https://github.com/karthikmudunuri/karthikmudunuri.site",
     },
   ],
   hackathonsummary:"I like building things During my time in university, I attended [hackathons](/about). People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
