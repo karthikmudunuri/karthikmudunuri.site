@@ -1,18 +1,10 @@
 "use client";
+import { DATA } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { GitFork, Star } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-
-const GITHUB_TOKEN = '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';
-
-interface RepoData {
-  title: string;
-  description: string;
-  forks: number;
-  stars: number;
-}
+import { useState } from "react";
 
 export const HoverEffect = ({
   items,
@@ -24,37 +16,6 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  let [repoData, setRepoData] = useState<RepoData[]>([]);
-
-  useEffect(() => {
-    async function fetchRepoData() {
-        const data = await Promise.all(
-          items.map(async (item) => {
-            // Extract the repository API URL from the provided link
-            const repoUrl = item.link.replace("https://github.com/", "https://api.github.com/repos/");
-            const response = await fetch(repoUrl, {
-                headers: {
-                  'Authorization': `token ${GITHUB_TOKEN}`, // Add the token here
-                },
-              });
-              if (!response.ok) {
-                throw new Error(`Failed to fetch ${repoUrl}`);
-              }
-            const repo = await response.json();
-            return {
-              title: repo.name,
-              description: repo.description,
-              forks: repo.forks_count,
-              stars: repo.stargazers_count,
-              
-          };
-        })
-      );
-      setRepoData(data);
-    }
-
-    fetchRepoData();
-  }, [items]);
 
   return (
     <div
@@ -63,7 +24,7 @@ export const HoverEffect = ({
         className
       )}
     >
-      {repoData.map((data, idx) => (
+      {DATA.contributions.map((contributions, idx) => (
         <Link
           href={items[idx]?.link}
           key={items[idx]?.link}
@@ -89,14 +50,14 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{data.title}</CardTitle>
-            <CardDescription>{data.description}</CardDescription>
+            <CardTitle>{contributions.title}</CardTitle>
+            <CardDescription>{contributions.description}</CardDescription>
             <CardFooter>
               <div className="flex items-center">
-                <GitFork className="mr-1" /> {data.forks}
+                <GitFork className="mr-1" /> {contributions.forks}
               </div>
               <div className="flex items-center ml-4">
-                <Star className="mr-1" /> {data.stars}
+                <Star className="mr-1" /> {contributions.stars}
               </div>
             </CardFooter>
           </Card>
