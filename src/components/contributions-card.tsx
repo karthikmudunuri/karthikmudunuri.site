@@ -5,7 +5,7 @@ import { GitFork, Star } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const GITHUB_TOKEN = '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';
+const GITHUB_TOKEN = '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';
 
 interface RepoData {
   title: string;
