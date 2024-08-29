@@ -127,7 +127,7 @@ export default function Page() {
     <section>
      
       <h1 className="mb-3 text-2xl font-medium tracking-tighter">
-        hey, I'm {DATA.name} 👋
+        hey, I&apos;m {DATA.name} 👋
       </h1>
       
       <hr className="my-2 border-neutral-100 dark:border-neutral-800" />
